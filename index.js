@@ -10,7 +10,7 @@ require('./config/database').connect();
 // Router import
 const notesRouter = require('./routes/notes');
 
-// Set up the port
+// port
 const port = process.env.PORT || 4000;
 
 // Middleware
@@ -24,6 +24,6 @@ app.get('/', (req, res) => {
     res.send("WORKING ..")
 });
 
-// Start the server
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 

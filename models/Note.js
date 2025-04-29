@@ -14,7 +14,7 @@ const noteSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { timestamps: true } // auto adds createdAt and updatedAt
+  { timestamps: true } 
 );
 
 const Note = mongoose.model('Note', noteSchema);
